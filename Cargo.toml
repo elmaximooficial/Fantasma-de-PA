@@ -7,7 +7,8 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-wasm4 = { version = "0.2.0", features = ["std", "include-sprites"] }
+buddy-alloc = "0.5.1"
+wasm4 = { version = "0.2.0", features = ["std"] }
 
 [profile.release]
 opt-level = "z"
